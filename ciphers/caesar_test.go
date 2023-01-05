@@ -26,11 +26,11 @@ func TestEncrypt(t *testing.T) {
 			input: "aBc",
 			expectedOutput: "dEf",
 		},
-		// {
-		// 	name: "Encrypt special characters",
-		// 	input: "!@#$%^&*()",
-		// 	expectedOutput: "!@#$%^&*()",
-		// },
+		{
+			name: "Encrypt special characters",
+			input: "!@#$%^&*()",
+			expectedOutput: "!@#$%^&*()",
+		},
 	}
 	
 	for _, test := range tests {
