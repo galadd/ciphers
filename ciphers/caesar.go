@@ -14,6 +14,10 @@ func Encrypt(message string) string {
 	
 	// Use the lookup table to encrypt the input string
 	for _, char := range message {
+		if lookup[char] == 0 {
+			encrypted += string(char)
+			continue
+		}
 		encrypted += string(lookup[char])
 	}
 	
@@ -34,6 +38,10 @@ func Decrypt(message string) string {
 	
 	// Use the lookup table to decrypt the input string
 	for _, char := range message {
+		if lookup[char] == 0 {
+			decrypted += string(char)
+			continue
+		}
 		decrypted += string(lookup[char])
 	}
 	
