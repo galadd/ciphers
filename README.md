@@ -19,3 +19,21 @@ To run the console application, follow these steps:
 6. The application will then perform the chosen cipher on the message and display the resulting output.
 
 That's it! You can now experiment with different ciphers and messages to see how they work.
+
+## Testing
+
+To run the tests for the project, use the command:
+
+```
+go test ./tests
+```
+or
+
+```
+cd tests
+go test
+```
+
+This will run all of the tests in the project and print the results. If any of the tests fail, the `go test` command will print an error message indicating which test failed and why.
+
+
