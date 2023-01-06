@@ -1,6 +1,6 @@
 # <center> Ciphers </center>
 This console application allows users to easily encrypt and decrypt messages using a variety of different ciphers. </br>
-Includes caesar and baconian.
+Includes caesar, baconian and gronsfeld.
 
 
 ## Running the application
@@ -27,15 +27,12 @@ That's it! You can now experiment with different ciphers and messages to see how
 To run the tests for the project, use the command:
 
 ```
-go test ./tests
+go test ./tests/<cipher>
 ```
 or
 
 ```
 cd tests
+cd <cipher>
 go test
 ```
-
-This will run all of the tests in the project and print the results. If any of the tests fail, the `go test` command will print an error message indicating which test failed and why.
-
-
