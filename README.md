@@ -1,5 +1,7 @@
 # <center> Ciphers </center>
-This console application allows users to easily encrypt and decrypt messages using a variety of different ciphers.
+This console application allows users to easily encrypt and decrypt messages using a variety of different ciphers. </br>
+Includes caesar and baconian.
+
 
 ## Running the application
 To run the console application, follow these steps:
