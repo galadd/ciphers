@@ -10,6 +10,7 @@ import (
 	"github.com/galadd/ciphers/ciphers/caesar"
 	"github.com/galadd/ciphers/ciphers/baconian"
 	"github.com/galadd/ciphers/ciphers/gronsfeld"
+	"github.com/galadd/ciphers/ciphers/porta"
 )
 
 func main() {
@@ -22,6 +23,7 @@ func main() {
 	fmt.Println("1. Caesar")
 	fmt.Println("2. Baconian")
 	fmt.Println("3. Gronsfeld")
+	fmt.Println("4. Porta")
 	fmt.Println()
 	fmt.Print("⏩ ⏩ ⏩  ")
 	fmt.Scanln(&choice)
@@ -60,9 +62,16 @@ func main() {
 		if ed == 2 {
 			codec = gronsfeld.Decrypt(input, key)
 		}
+	case 4:
+		if ed == 1 {
+			codec = porta.Encrypt(input)
+		}
+		if ed == 2 {
+			codec = porta.Decrypt(input)
+		}
 	}
 	fmt.Println()
-	fmt.Println("⬇ 🤓 ⬇ 🤓 ⬇ 🤓 ⬇ 🤓 ⬇")
+	fmt.Println("⬇ 💻🤓 ⬇ 💻🤓 ⬇ 💻🤓 ⬇ 💻🤓 ⬇")
 
 	if ed == 1 {
 		fmt.Println("Message Encrypted: ", codec)
