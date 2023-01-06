@@ -22,6 +22,8 @@ func main() {
 	fmt.Println("1. Caesar")
 	fmt.Println("2. Baconian")
 	fmt.Println("3. Gronsfeld")
+	fmt.Println()
+	fmt.Print("⏩ ⏩ ⏩  ")
 	fmt.Scanln(&choice)
 
 	scanner := bufio.NewScanner(os.Stdin)
@@ -30,7 +32,6 @@ func main() {
 	fmt.Println("Write your message:")
 	scanner.Scan()
 	input := scanner.Text()
-	fmt.Println(input)
 	var codec string
 
 	switch choice {
@@ -61,7 +62,7 @@ func main() {
 		}
 	}
 	fmt.Println()
-	fmt.Println("⬇️  ⬇️  ⬇️  ⬇️  ⬇️")
+	fmt.Println("⬇ 🤓 ⬇ 🤓 ⬇ 🤓 ⬇ 🤓 ⬇")
 
 	if ed == 1 {
 		fmt.Println("Message Encrypted: ", codec)
