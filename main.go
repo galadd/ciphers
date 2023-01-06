@@ -9,6 +9,7 @@ import (
 
 	"github.com/galadd/ciphers/ciphers/caesar"
 	"github.com/galadd/ciphers/ciphers/baconian"
+	"github.com/galadd/ciphers/ciphers/gronsfeld"
 )
 
 func main() {
@@ -20,6 +21,7 @@ func main() {
 	fmt.Println("Choose a cipher:")
 	fmt.Println("1. Caesar")
 	fmt.Println("2. Baconian")
+	fmt.Println("3. Gronsfeld")
 	fmt.Scanln(&choice)
 
 	scanner := bufio.NewScanner(os.Stdin)
@@ -45,6 +47,17 @@ func main() {
 		}
 		if ed == 2 {
 			codec = baconian.Decrypt(input)
+		}
+	case 3:
+		var key string
+		fmt.Print("Input key: ")
+		fmt.Scan(&key)
+
+		if ed == 1 {
+			codec = gronsfeld.Encrypt(input, key)
+		}
+		if ed == 2 {
+			codec = gronsfeld.Decrypt(input, key)
 		}
 	}
 	fmt.Println()
