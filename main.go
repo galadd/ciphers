@@ -11,6 +11,7 @@ import (
 	"github.com/galadd/ciphers/ciphers/baconian"
 	"github.com/galadd/ciphers/ciphers/gronsfeld"
 	"github.com/galadd/ciphers/ciphers/porta"
+	"github.com/galadd/ciphers/ciphers/bifid"
 )
 
 func main() {
@@ -24,6 +25,7 @@ func main() {
 	fmt.Println("2. Baconian")
 	fmt.Println("3. Gronsfeld")
 	fmt.Println("4. Porta")
+	fmt.Println("5. Bifid")
 	fmt.Println()
 	fmt.Print("⏩ ⏩ ⏩  ")
 	fmt.Scanln(&choice)
@@ -68,6 +70,13 @@ func main() {
 		}
 		if ed == 2 {
 			codec = porta.Decrypt(input)
+		}
+	case 5:
+		if ed == 1 {
+			codec = bifid.Encrypt(input)
+		}
+		if ed == 2 {
+			codec = bifid.Decrypt(input)
 		}
 	}
 	fmt.Println()
