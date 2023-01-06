@@ -1,6 +1,6 @@
 # <center> Ciphers </center>
 This console application allows users to easily encrypt and decrypt messages using a variety of different ciphers. </br>
-Includes caesar, baconian and gronsfeld.
+Includes [the following ciphers](https://github.com/galadd/ciphers/tree/main/ciphers).
 
 
 ## Running the application
