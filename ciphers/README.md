@@ -16,13 +16,3 @@ L + 1 = M </br>
 O + 2 = Q
 
 So the encoded message would be "IGOMQ".
-
-To decode a message that was encoded using the Gronsfeld cipher, you can use the same key and perform the opposite shift on each character. For example, to decode the message "IGOMQ" using the key "123", you would do the following:
-
-I - 1 = H </br>
-G - 2 = E </br>
-O - 3 = L </br>
-M - 1 = L </br>
-Q - 2 = O
-
-So the decoded message would be "HELLO".
