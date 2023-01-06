@@ -21,3 +21,6 @@ So the encoded message would be "IGOMQ".
 
 ### 4. Porta
 To encode a message using the Porta cipher, you need a key, which is a series of letters. Each letter in the key specifies the shift for the corresponding character in the message. The shift value for each letter is calculated by subtracting the letter from 'A' (for uppercase characters) or 'a' (for lowercase characters).
+
+### 5. Bifid
+This cipher technique considered more secure compared to other substitution algorithms reason being it breaks the message apart into two separate streams and then recombines them. It is a combination of the Polybius square with the transposition and uses fractionation to achieve diffusion. This encrypting technique invented by Felin Delastelle. It just only ever used by amateur cryptographers.
