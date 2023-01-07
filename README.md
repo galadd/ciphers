@@ -6,13 +6,20 @@ Includes [the following ciphers](https://github.com/galadd/ciphers/tree/main/cip
 ## Running the application
 To run the console application, follow these steps:
 
-1. Open a terminal or command prompt.
+1. Open a terminal or command prompt. Clone the repository 
+    ```
+    git clone https://github.com/galadd/ciphers.git
+    ```
 
 2. Navigate to the directory where the application is located.
+    ```
+    cd ciphers
+    ```
 
 3. Run the application 
-    * On Windows, run `ciphers.exe`
-    * On Linux, run `./ciphers`
+    ```
+    go run main.go
+    ```
 
 4. When the application starts, it will prompt you to enter a message that you want to encrypt or decrypt. Type your message and press Enter.
 
